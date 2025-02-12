@@ -2,14 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --yellow: #cfb02c;
+    --black: black;
+    --light-green: #344742;
+    --dark-green: #293330;	
+    --white: #f1f1f1;
 }
 
 .nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--white);
+    color: var(--black);
     padding: 10px 20px;
 }
 
@@ -38,7 +43,7 @@
     width: 30%;
     height: 600px;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 20px;
 
@@ -64,6 +69,19 @@
 .container p2 {
     margin-bottom: 10px;
     position: absolute;
+}
+
+.container button {
+    position: absolute;
+    width: 150px;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: var(--white);
+    color: var(--white);
+    border: 2px solid var(--yellow);
+    border-top-left-radius: 25px ;
+    border-bottom-right-radius: 25px;
+    cursor: pointer;
 }
 
 .container form input {
