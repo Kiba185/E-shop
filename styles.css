@@ -39,29 +39,31 @@
 .containers {
     display: flex;
     position: relative;
-    width: 65%;
+    width: 85%;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto auto 100px auto;
+    gap: 40px;
 }
 
 .container {
     position: relative;
-    width: 30%;
-    height: 600px;
+    width: 320px;
+    height: 520px;
     padding: 20px;
-    background-color: var(--white);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    background-color: rgb(173, 173, 173);
+    margin: 0;
 
 }
 
 .container img {
     position: absolute;
     width: 320px;
+    height: 370px;
     margin: 0 auto 15px;
     transform: translateX(-50%);
     left: 50%;
+    top:0;
 }
 
 .container h2 {
