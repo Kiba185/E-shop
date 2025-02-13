@@ -22,20 +22,27 @@
     font-size: 24px;
 }
 
-.nav-bar img {
+.img-logo{
+    position: absolute;
+    width: 300px;
+    transform: translateX(-50%);
+    left: 20px;
+}
+
+.img-cart{
+    position: absolute;
     width: 50px;
-    height: 50px;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .containers {
     display: flex;
     position: relative;
-    width: 100%;
+    width: 65%;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: auto auto 100px auto;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .container {
@@ -51,24 +58,27 @@
 
 .container img {
     position: absolute;
-    width: 300px;
+    width: 320px;
     margin: 0 auto 15px;
+    transform: translateX(-50%);
+    left: 50%;
 }
 
 .container h2 {
     text-align: center;
     margin-bottom: 20px;
     position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 450px;
 }
 
 .container p {
     margin-bottom: 10px;
     position: absolute;
-}
-
-.container p2 {
-    margin-bottom: 10px;
-    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 500px;
 }
 
 .container button {
@@ -82,13 +92,8 @@
     border-top-left-radius: 25px ;
     border-bottom-right-radius: 25px;
     cursor: pointer;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 520px;
 }
 
-.container form input {
-    position: absolute;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
