@@ -6,7 +6,8 @@
     --black: black;
     --light-green: #344742;
     --dark-green: #293330;	
-    --white: #f1f1f1;
+    --white: #ffffff;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav-bar {
@@ -51,7 +52,7 @@
     width: 320px;
     height: 520px;
     padding: 20px;
-    background-color: rgb(173, 173, 173);
+    background-color: var(--white);
     margin: 0;
 
 }
@@ -72,7 +73,8 @@
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    top: 450px;
+    top: 390px;
+    text-wrap: nowrap;
 }
 
 .container p {
@@ -80,22 +82,54 @@
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    top: 500px;
+    top: 435px;
+    font-size: 19px;
+    color: var(--light-green);
+    font-weight: bold;
+}
+
+.containers :nth-child(n+2) p{
+    justify-content: space-between;
+    top: 435px;
+    z-index: 1;
+    
+}
+
+.containers :nth-child(n+2) p+p{
+    justify-content: space-between;
+    left: 39%;
+    top: 436.5px;
+    z-index: 1;
+    text-decoration: line-through;
+    font-size: 17px;
+    color: var(--black);
+    font-weight: normal;
+}
+
+.containers :nth-child(n+2) h2+p{
+    justify-content: space-between;
+    left: 61%;
+    top: 435px;
+    z-index: 2;
+    font-size: 19px;
+    font-weight: bold;
 }
 
 .container button {
     position: absolute;
     width: 150px;
+    height: 44px;
     padding: 10px;
     margin-top: 15px;
     background-color: var(--white);
-    color: var(--white);
+    color: var(--black);
+    text-transform: uppercase;
     border: 2px solid var(--yellow);
     border-top-left-radius: 25px ;
     border-bottom-right-radius: 25px;
     cursor: pointer;
     transform: translateX(-50%);
     left: 50%;
-    top: 520px;
+    top: 457px;
 }
 
