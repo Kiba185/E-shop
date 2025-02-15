@@ -310,7 +310,7 @@
     font-size: 30px;
 } 
 
-.footer p {
+.footer a {
     color: var(--yellow);
     font-size: 17px;
     line-height: 190%;
@@ -320,4 +320,5 @@
     position: relative;
     width: 25%;
     height: 400px;
+    margin: 40px 20px 20px 20px; ;
 }
