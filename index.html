@@ -10,16 +10,37 @@
     <! --https://nicepage.com/html-templates/preview/nutrition-shop-6437955?device=desktop -->
 </head>
 <body>
+    <div class="menu" id="menu">
+        <div class="menu-left">
+            <i onclick="closeMenu()" class="fa fa-close"></i>
+            <div>
+                <ul class="menu-links">
+                    <li class="menu-link">
+                        <a>Home</a>
+                    </li>
+                    <li class="menu-link">
+                        <a>About Me</a>
+                    </li>
+                    <li class="menu-link">
+                        <a>Pages</a>
+                    </li>
+                    <li class="menu-link">
+                        <a>Contact</a>
+                    </li>
+            </div>
+        </div>
+        <div onclick="closeMenu()" class="menu-right">
+        </div>
+    </div>
     <div class="nav-bar">
         <img class="img-logo" src="images/logo.png" alt="logo">
-        
         <div class="nav-links">
             <a class="nav-link">Home</a>
             <a class="nav-link">About Me</a>
             <a class="nav-link">Pages</a>
             <a class="nav-link">Contact</a>
         </div>
-        
+        <i onclick="openMenu()" class="fa fa-bars"></i>
         <img class="img-cart" src="images/cart.png" alt="cart">
         <button class="nav-btn">BOOK AN APPOINTMENT</button>
     </div>
@@ -36,42 +57,54 @@
         <div class="container">
             <img src="images/1.jpg" alt="product">
             <h2>Healthy Breakfast</h2>
-            <p>$18.00</p>
+            <div class="price">
+                <p>$18.00</p>
+            </div>
             <button class="btn">Add to cart</button>
         </div>
         <div class="container">
             <img src="images/2.jpg" alt="product">
             <h2>Weight Loss</h2>
-            <p>$29.00</p>
-            <p>$44.00</p>
+            <div class="price">
+                <p>$29.00</p>
+                <p>$44.00</p>
+            </div>
             <button class="btn">Add to cart</button>
         </div>
         <div class="container">
             <img src="images/3.jpg" alt="product">
             <h2>Grilled Vegetables</h2>
-            <p>$15.00</p>
-            <p>$22.00</p>
+            <div class="price">
+                <p>$15.00</p>
+                <p>$22.00</p>
+            </div>
             <button class="btn">Add to cart</button>
         </div>
         <div class="container">
             <img src="images/4.jpg" alt="product">
             <h2>Fruit Mix</h2>
-            <p>$40.00</p>
-            <p>$10.00</p>
+            <div class="price">
+                <p>$40.00</p>
+                <p>$10.00</p>
+            </div>
             <button class="btn">Add to cart</button>
         </div>
         <div class="container">
             <img src="images/5.png" alt="product">
             <h2>The Nutrition Book</h2>
-            <p>$19.00</p>
-            <p>$25.00</p>
+            <div class="price">
+                <p>$19.00</p>
+                <p>$25.00</p>
+            </div>
             <button class="btn">Add to cart</button>
         </div>
         <div class="container">
             <img src="images/6.jpg" alt="product">
             <h2>Best Protein Shakes</h2>
-            <p>$17.00</p>
-            <p>$20.00</p>
+            <div class="price">
+                <p>$17.00</p>
+                <p>$20.00</p>
+            </div>
             <button class="btn">Add to cart</button>
         </div>
     </div>
@@ -142,5 +175,15 @@
                 <button class="btn">Submit</button>
             </div>
         </div>
+    </div>
+    <script>
+        function openMenu() {
+            document.getElementById("menu").style.visibility = "visible";
+        }
+        function closeMenu() {
+            document.getElementById("menu").style.visibility = "hidden";
+        }
+    </script>
 </body>
+
 </html>

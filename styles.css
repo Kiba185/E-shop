@@ -5,10 +5,65 @@
     --yellow: #cfb02c;
     --black: black;
     --green: #344742;
-    --light-green: #728d85 ;
-    --dark-green: #293330;	
+    --light-green: #728d85;
+    --dark-green: #293330;
     --white: #ffffff;
     font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.menu-left {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 20px;
+}
+
+.menu-right {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    background-color: var(--black);
+    opacity: 60%;
+}
+
+.menu-links {
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.menu-link {
+    padding: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.menu i {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
 }
 
 .nav-bar {
@@ -23,6 +78,16 @@
     margin-top: 20px;
 }
 
+.nav-bar i {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
 .nav-bar h1 {
     font-size: 24px;
 }
@@ -30,7 +95,7 @@
 .nav-links {
     position: absolute;
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
     gap: 25px;
     list-style-type: none;
     left: 50%;
@@ -44,24 +109,27 @@
     color: var(--dark-green);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     border-bottom: 1px solid var(--yellow);
 }
 
-.img-logo{
+.img-logo {
     position: absolute;
     width: 155px;
     left: 50px;
 }
 
-.img-cart{
+.img-cart {
     position: absolute;
     width: 30px;
     transform: translateX(-50%);
-    right: 24%;
+    right: 250px;
     top: 15px;
+    z-index: 2;
+    cursor: pointer;
 
 }
+
 .nav-btn {
     position: absolute;
     width: 200px;
@@ -74,7 +142,7 @@
     border: none;
     border-radius: 90px;
     cursor: pointer;
-    right: 8%;
+    right: 50px;
     text-wrap: nowrap;
     font-size: 13px;
 }
@@ -99,7 +167,7 @@
 .title h1 {
     font-size: 50px;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .title p {
@@ -125,14 +193,16 @@
     justify-content: space-between;
     gap: 30px;
     width: 85%;
-    margin: auto auto 100px auto;
+    margin-bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 50% 50%;
 }
 
 .container {
     position: relative;
-    width: 320px;
+    width: 30%;
     height: 520px;
     padding: 20px;
     background-color: var(--white);
@@ -147,7 +217,7 @@
     margin: 0 auto 15px;
     transform: translateX(-50%);
     left: 50%;
-    top:0;
+    top: 0;
 }
 
 .container h2 {
@@ -160,28 +230,24 @@
     text-wrap: nowrap;
 }
 
-.container p {
-    margin-bottom: 10px;
+.price {
     position: absolute;
-    transform: translateX(-50%);
+    width: 120px;
+    height: 20px;
+    top: 85%;
+    right: 0;
+    z-index: 2;
     left: 50%;
-    top: 435px;
-    font-size: 19px;
-    color: var(--green);
-    font-weight: bold;
+    transform: translateX(-50%);
+
 }
 
-.containers :nth-child(n+2) p{
+.price :nth-child(2) {
+    position: absolute;
     justify-content: space-between;
-    top: 435px;
-    z-index: 1;
-    
-}
-
-.containers :nth-child(n+2) p+p{
-    justify-content: space-between;
-    left: 39%;
-    top: 436.5px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 1;
     text-decoration: line-through;
     font-size: 17px;
@@ -189,11 +255,13 @@
     font-weight: normal;
 }
 
-.containers :nth-child(n+2) h2+p{
+.price :nth-child(1) {
+    position: absolute;
     justify-content: space-between;
-    left: 61%;
-    top: 435px;
-    z-index: 2;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
     font-size: 19px;
     font-weight: bold;
 }
@@ -208,7 +276,7 @@
     color: var(--black);
     text-transform: uppercase;
     border: 2px solid var(--yellow);
-    border-top-left-radius: 25px ;
+    border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     cursor: pointer;
     transform: translateX(-50%);
@@ -293,7 +361,7 @@
 }
 
 .book button:hover {
-    background-color:var(--light-green);
+    background-color: var(--light-green);
 }
 
 .footer {
@@ -369,7 +437,7 @@
     height: 300px;
 }
 
-.newsletter label{
+.newsletter label {
     position: absolute;
     font-size: 16px;
     color: var(--white);
@@ -409,3 +477,30 @@
     background-color: var(--light-green);
 }
 
+
+@media only screen and (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-bar i {
+        visibility: visible;
+    }
+
+    .containers {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 30% 30%;
+        row-gap: 50px;
+        margin-bottom: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .containers {
+        grid-template-columns: 100%;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+        row-gap: 50px;
+    }
+    
+}
