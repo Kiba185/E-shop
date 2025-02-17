@@ -23,11 +23,11 @@
 
 .menu-left {
     position: absolute;
-    width: 25%;
+    width: 280px;
     height: 100%;
     left: 0;
     top: 0;
-    z-index: 4;
+    z-index: 5;
     background-color: var(--black);
     color: var(--white);
     padding: 20px;
@@ -35,7 +35,7 @@
 
 .menu-right {
     position: absolute;
-    width: 75%;
+    width: 100%;
     height: 100%;
     right: 0;
     top: 0;
@@ -115,8 +115,9 @@
 
 .img-logo {
     position: absolute;
-    width: 155px;
+    width: 170px;
     left: 50px;
+    top: 15px;
 }
 
 .img-cart {
@@ -300,7 +301,7 @@
 .book img {
     position: absolute;
     width: 320px;
-    margin: 0 auto 15px;
+    margin-bottom:15px;
     left: 14%;
     top: 55%;
     transform: translateY(-50%);
@@ -330,7 +331,7 @@
 
 }
 
-.email {
+.book .email {
     position: absolute;
     top: 70%;
     z-index: 2;
@@ -366,12 +367,23 @@
 
 .footer {
     position: relative;
-    display: flex;
-    justify-content: center;
     width: 100%;
     height: 400px;
     background-color: var(--dark-green);
+}
+
+.footer-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    width: 95%;
+    height: 95%;
     padding: 20px;
+    text-wrap: nowrap;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .footer .img-logo {
@@ -408,13 +420,6 @@
     cursor: pointer;
 }
 
-.footer-section {
-    position: relative;
-    width: 25%;
-    height: 80%;
-    margin: 55px 20px 20px 20px;
-}
-
 .footer-links {
     list-style-type: none;
     line-height: 220%;
@@ -433,7 +438,7 @@
 
 .newsletter {
     position: absolute;
-    width: 100%;
+    width: 85%;
     height: 300px;
 }
 
@@ -492,6 +497,59 @@
         grid-template-rows: 30% 30% 30%;
         row-gap: 50px;
         margin-bottom: 180px;
+        width: 95%;
+    }
+
+    .book img {
+        left: 50%;
+        top: 10%;
+        transform: translateX(-50%);
+    }
+
+    .book {
+        height: 800px;
+    }
+
+    .book .email {
+        width: 400px;
+        left: 0;
+    }
+
+    .book button {
+        width: 200px;
+        left: 67%;
+    }
+
+    .book-text-section {
+        width: 80%;
+        left: 50%;
+        top: 650px;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .book h2 {
+        font-size: 30px;
+    }
+
+    .footer {
+        height: 700px;
+    }
+
+    .footer-container {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
+        row-gap: 70px;
+        column-gap: 73px;
+        width: 80%;
+    }
+
+    .newsletter input {
+        width: 300px;
+    }
+
+    .newsletter button {
+        width: 300px;
     }
 
 }
@@ -502,5 +560,62 @@
         grid-template-rows: 16% 16% 16% 16% 16% 16%;
         row-gap: 50px;
     }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .book {
+        height: 900px;
+    }
+
+    .book .email {
+        top: 70%;
+        width: 100%;
+        left: 0;
+    }
     
+    .book button {
+        top: 94%;
+        width: 100%;
+        left: 0;
+    }    
+    
+    .footer {
+        height: 1200px;
+    }
+
+    .footer-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 25% 23% 22%;
+        row-gap: 10px;
+        column-gap: 73px;
+    }
+
+    .social-icons {
+        top: 3%;
+        left: 6%;
+    }
+
+    .footer-section .img-logo {
+        left: 5%;
+    }
+
+    .newsletter {
+        height: 350px;
+    }
+
+    .newsletter h2 {
+        margin: 0;
+    }
+    
+    .newsletter input {
+        width: 106%;
+    }
+
+    .newsletter button {
+        width: 106%;
+        top: 48%;
+    }
+
 }
