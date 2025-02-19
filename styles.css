@@ -348,7 +348,7 @@
 .book button {
     position: absolute;
     top: 70%;
-    right: 7%;
+    left: 350px;
     z-index: 2;
     background-color: var(--yellow);
     border: none;
@@ -390,7 +390,7 @@
     position: absolute;
     width: 205px;
     left: 10px;
-    top: 9px;
+    top: 7%;
 }
 
 .footer h2 {
@@ -438,7 +438,7 @@
 
 .newsletter {
     position: absolute;
-    width: 85%;
+    width: 150px;
     height: 300px;
 }
 
@@ -481,7 +481,6 @@
 .newsletter button:hover {
     background-color: var(--light-green);
 }
-
 
 @media only screen and (max-width: 1024px) {
     .nav-links {
@@ -550,6 +549,14 @@
 
     .newsletter button {
         width: 300px;
+    }
+
+    .footer-section .img-logo {
+        top: 5%;
+    }
+
+    .social-icons {
+        top: 10%;
     }
 
 }
