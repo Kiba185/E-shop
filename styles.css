@@ -438,7 +438,7 @@
 
 .newsletter {
     position: absolute;
-    width: 150px;
+    width: 100%;
     height: 300px;
 }
 
@@ -452,7 +452,7 @@
 
 .newsletter input {
     position: absolute;
-    width: 240px;
+    width: 20%;
     height: 45px;
     padding: 10px;
     font-size: 15px;
@@ -463,9 +463,9 @@
     outline: none;
 }
 
-.newsletter button {
+.newsletter .btn {
     position: absolute;
-    width: 240px;
+    width: 20%;
     height: 43px;
     padding: 10px;
     font-size: 15px;
@@ -543,20 +543,20 @@
         width: 80%;
     }
 
-    .newsletter input {
-        width: 300px;
-    }
-
-    .newsletter button {
-        width: 300px;
-    }
-
     .footer-section .img-logo {
         top: 5%;
     }
 
     .social-icons {
         top: 10%;
+    }
+
+    .newsletter .btn {
+        width: 40%;
+    }
+
+    .newsletter input {
+        width: 40%;
     }
 
 }
@@ -569,7 +569,16 @@
     }
 
     .nav-btn {
-        display: none;
+        top: 110%;
+        left: 6.5%;
+    }
+
+    .nav-bar i {
+        left: 60%;
+    }
+
+    .img-cart {
+        left: 80%;
     }
 
     .book {
@@ -594,7 +603,7 @@
 
     .footer-container {
         grid-template-columns: 100%;
-        grid-template-rows: 8% 25% 23% 22%;
+        grid-template-rows: 8% 28% 27% 22%;
         row-gap: 10px;
         column-gap: 73px;
     }
@@ -605,7 +614,8 @@
     }
 
     .footer-section .img-logo {
-        left: 5%;
+        left: 4%;
+        top: 0;
     }
 
     .newsletter {
@@ -617,12 +627,12 @@
     }
     
     .newsletter input {
-        width: 106%;
+        width: 100%;
     }
 
-    .newsletter button {
-        width: 106%;
-        top: 48%;
+    .newsletter .btn {
+        width: 100%;
+        top: 50%;
     }
 
 }
