@@ -438,7 +438,7 @@
 
 .newsletter {
     position: absolute;
-    width: 100%;
+    width: 150px;
     height: 300px;
 }
 
@@ -452,7 +452,7 @@
 
 .newsletter input {
     position: absolute;
-    width: 20%;
+    width: 300px;
     height: 45px;
     padding: 10px;
     font-size: 15px;
@@ -465,7 +465,7 @@
 
 .newsletter .btn {
     position: absolute;
-    width: 20%;
+    width: 300px;
     height: 43px;
     padding: 10px;
     font-size: 15px;
@@ -572,11 +572,11 @@ footer p {
     }
 
     .newsletter .btn {
-        width: 40%;
+        width: 250px;
     }
 
     .newsletter input {
-        width: 40%;
+        width: 250px;
     }
 
 }
